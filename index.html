@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Components Exercise</title>
+    <style>
+      h1 {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Users Cards</h1>
+
+    <user-card
+      name="Ro"
+      avatar="https://randomuser.me/api/portraits/men/28.jpg"
+    >
+      <div slot="email">ro@gmail.com</div>
+      <div slot="phone">555 555 5555</div>
+    </user-card>
+
+    <user-card
+      name="Tina"
+      avatar="https://randomuser.me/api/portraits/women/45.jpg"
+    >
+      <div slot="email">tina@gmail.com</div>
+      <div slot="phone">555 666 5555</div>
+    </user-card>
+
+    <user-card
+      name="Lisa"
+      avatar="https://randomuser.me/api/portraits/women/34.jpg"
+    >
+      <div slot="email">lisa@gmail.com</div>
+      <div slot="phone">555 777 5555</div>
+    </user-card>
+
+    <script src="web-components/userCard.js"></script>
+  </body>
+</html>
